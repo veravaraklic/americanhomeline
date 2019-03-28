@@ -51,8 +51,16 @@
             font-weight: 600;
             font-style: normal;
         }
+        
 
-        @media(max-width:46.24em) {
+        @media(min-width:46.24em) {
+            .product-picture {
+                width: 260px;
+                height: 260px;
+            }
+        }
+
+        @media(max-width:767) {
             .site-footer-copyright img {
                 display: none;
             }
@@ -61,6 +69,27 @@
                 width: 641px;
                 height: 389px;
                 transform: scale(1) translate(-97px, -77px) translateZ(8px);
+            }
+
+            .product-grid .product-name {
+                max-height: 4.16rem;
+            }
+
+            .product-picture {
+                width: 160px!important;
+                height: 160px!important;
+            }
+        }
+        @media(max-width:320) {
+            .product-picture {
+                width: 130px !important;
+                height: 130px !important;
+            }
+            .product-grid .product-name {
+                max-height: 4.16rem!important;
+            }
+            .site-footer-copyright img {
+                display: none!important;
             }
         }
     </style>
@@ -325,13 +354,67 @@
 
                         <div class="collection-three u-relative">
                             <div class="js-appear-object appear-bottom collection-three-img u-w7of8 u-offset-l-w1of8 | u-w8of8@tablet u-offset-l-0@tablet">
-                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover u-force-3d" src="img/The-London-Inspiration_1260x850.jpg" alt="The Inspiration">
+                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover u-force-3d" src="img/The-London-Inspiration_1247x608.jpg" alt="The Inspiration">
                             </div>
                             <div class="collection-three-content u-absolute u-w3of8 | u-w8of8@tablet">
                                 <h1 class="title">The London Inspiration</h1>
                                 <p>The London was inspired by a weekend trip to a friend's cottage. Out in the fresh air all day and cozying up by a fire at night. It was a very warm, casual livingroom where we could settle in and reminisce about our days backpacking across Europe (living off just a baguette and a wedge of cheese). We wanted to create a collection that exudes warmth and comfort. A collection that was going to welcome you as soon as you got home! We used the best of transitional design  &#8212; marrying both traditional and contemporary elements, giving the London Collection a timeless feel.
                             </div>
                         </div>
+
+                        <section class="homepage-shop">
+                            <div class="inner-container">
+                                <header class="js-appear-object appear-bottom product-grid-header">
+                                    <h2>Shop The London Luxury Collection</h2>
+                                    <a href="collections.html" class="product-grid-cta cta-link-secondary">Premium Quality</a>
+                                </header>
+                                <div class="product-grid js-load-more container">
+                                    <div class="product-grid-item js-appear-object appear-bottom " data-productid="2003903840325">
+                                        <a href="london.html" class="product-link">
+                                            <div class="product-picture">
+                                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/London-Luxury-3-Piece-Sofa-Collection.jpg" alt="London Luxury 3 Piece Sofa Collection">
+                                                <div class="product-more"></div>
+                                            </div>
+                                            <p class="product-name">London Luxory 3 Piece Sofa Set</p>
+                                            <!--<div class="product-info"><span class="product-info-category">London Luxory 3 Piece Sofa Set</span></div>-->
+                                        </a>
+                                    </div>
+
+                                    <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one" data-productid="2003910066245">
+                                        <a href="lorraine.html" class="product-link">
+                                            <div class="product-picture">
+                                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/London-Luxury-Sofa2.jpg" alt="London Luxury Sofa">
+                                                <div class="product-more"></div>
+                                            </div>
+                                            <p class="product-name">London Luxury Sofa</p>
+                                            <!--<div class="product-info"><span class="product-info-category">London Luxury Sofa</span></div>-->
+                                        </a>
+                                    </div>
+
+                                    <div class="product-grid-item js-appear-object appear-bottom " data-productid="1500977430597">
+                                        <a href="crawford.html" class="product-link">
+                                            <div class="product-picture">
+                                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/London-Luxury-Loveseat2.jpg" alt="London Luxury Loveseat">
+                                                <div class="product-more"></div>
+                                            </div>
+                                            <p class="product-name">London Luxury Loveseat</p>
+                                            <!--<div class="product-info"><span class="product-info-category">London Luxury Loveseat</span></div>-->
+                                        </a>
+                                    </div>
+
+                                    <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one" data-productid="2003916226629">
+                                        <a href="mattresses.html" class="product-link">
+                                            <div class="product-picture">
+                                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/London-Luxury-Chair2.jpg" alt="London Luxury Chair">
+                                                <div class="product-more"></div>
+                                            </div>
+                                            <p class="product-name">London Luxury Chair</p>
+                                            <!--<div class="product-info"><span class="product-info-category">London Luxury Chair</span></div>-->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
                         <div class="collection-next wrapper--valign">
                             <a href="lorraine.html" class="collection-next-inner">
@@ -355,59 +438,7 @@
                         </div>
                     </div>
                 </div>
-                <section class="homepage-shop">
-                    <div class="inner-container">
-                        <header class="js-appear-object appear-bottom product-grid-header">
-                            <h2>Shop The London Luxury Collection</h2>
-                            <a href="collections.html" class="product-grid-cta cta-link-secondary">Premium Quality</a>
-                        </header>
-                        <div class="product-grid js-load-more container">
-                            <div class="product-grid-item js-appear-object appear-bottom " data-productid="2003903840325">
-                                <a href="london.html" class="product-link">
-                                    <div class="product-picture">
-                                        <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/London-Luxury-3-Piece-Sofa-Collection.jpg" alt="London Luxury 3 Piece Sofa Collection">
-                                        <div class="product-more"></div>
-                                    </div>
-                                    <p class="product-name">London Luxory 3 Piece Sofa Set</p>
-                                    <!--<div class="product-info"><span class="product-info-category">London Luxory 3 Piece Sofa Set</span></div>-->
-                                </a>
-                            </div>
-
-                            <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one" data-productid="2003910066245">
-                                <a href="lorraine.html" class="product-link">
-                                    <div class="product-picture">
-                                        <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/London-Luxury-Sofa.jpg" alt="London Luxury Sofa">
-                                        <div class="product-more"></div>
-                                    </div>
-                                    <p class="product-name">London Luxury Sofa</p>
-                                    <!--<div class="product-info"><span class="product-info-category">London Luxury Sofa</span></div>-->
-                                </a>
-                            </div>
-
-                            <div class="product-grid-item js-appear-object appear-bottom " data-productid="1500977430597">
-                                <a href="crawford.html" class="product-link">
-                                    <div class="product-picture">
-                                        <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/London-Luxury-Loveseat.jpg" alt="London Luxury Loveseat">
-                                        <div class="product-more"></div>
-                                    </div>
-                                    <p class="product-name">London Luxury Loveseat</p>
-                                    <!--<div class="product-info"><span class="product-info-category">London Luxury Loveseat</span></div>-->
-                                </a>
-                            </div>
-
-                            <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one" data-productid="2003916226629">
-                                <a href="mattresses.html" class="product-link">
-                                    <div class="product-picture">
-                                        <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/London-Luxury-Chair.jpg" alt="London Luxury Chair">
-                                        <div class="product-more"></div>
-                                    </div>
-                                    <p class="product-name">London Luxury Chair</p>
-                                    <!--<div class="product-info"><span class="product-info-category">London Luxury Chair</span></div>-->
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+               
             </main>
             <footer class="site-footer" id="site-footer">
                 <div class="inner-container">
