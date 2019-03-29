@@ -77,16 +77,74 @@
             font-style: normal;
         }
 
-        @media(max-width:46.24em) {
+
+        .product-grid .product-name {
+            max-height: 4.16rem;
+            font-size: 15px!important
+        }
+
+        @media(max-width:1024px) {
+            .cta-link-secondary {
+                display: none !important;
+            }
+        }
+
+        @media(max-width:767px) {
+            .homepage-shop {
+                padding-top: 80px;
+            }
+        }
+
+            @media(max-width:46.24em) {
+                .site-footer-copyright img {
+                    display: none;
+                }
+
+                .collection-hero-bg u-absolute u-pos-tl u-fit u-overflow-h img {
+                    width: 641px;
+                    height: 389px;
+                    transform: scale(1) translate(-158px, -54px) translateZ(0px);
+                } 
+            }
+
+
+        @media(min-width:46.24em) {
+            .product-picture {
+                width: 260px;
+                height: 260px;
+            }
+        }
+
+        @media(max-width:767) {
             .site-footer-copyright img {
                 display: none;
             }
+
             .collection-hero-bg u-absolute u-pos-tl u-fit u-overflow-h img {
                 width: 641px;
                 height: 389px;
-                transform: scale(1) translate(-158px, -54px) translateZ(0px);             
+                transform: scale(1) translate(-97px, -77px) translateZ(8px);
             }
-            
+
+            .product-grid .product-name {
+                max-height: 4.16rem;
+            }
+
+            .collection-hero-content {
+                padding: 21px;
+            }
+        }
+
+        @media(max-width:320) {
+
+            .product-grid .product-name {
+                max-height: 4.16rem !important;
+
+            }
+
+            .site-footer-copyright img {
+                display: none !important;
+            }
         }
     </style>
     <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
@@ -176,7 +234,7 @@
                             </div>
                         </div>
                         <div class="collection-hero-content u-inline-block u-va-middle u-w2of8 u-offset-l-w5of8 | u-w3of8@mobile u-offset-l-w4of8@tablet | u-w8of8@mobile u-offset-l-0@mobile">
-                            <h1 class="collection-hero-title title title--big u-inline-block">Crawford <!--<sup>2019</sup>-->
+                            <h1 class="collection-hero-title title title--big u-inline-block">Crawford 
                             </h1>
                         </div>
                         <div class="collection-hero-scroll u-absolute">
@@ -353,14 +411,63 @@
 
                         <div class="collection-three u-relative">
                             <div class="js-appear-object appear-bottom collection-three-img u-w7of8 u-offset-l-w1of8 | u-w8of8@tablet u-offset-l-0@tablet">
-                                <iframe width="640" height="564" src="https://player.vimeo.com/video/307526886" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
-                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover u-force-3d" src="https://i.postimg.cc/qBNNYJvR/The-Inspiration-1260x850.jpg" alt="The Inspiration">
+                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover u-force-3d" src="img/The-Crawford-Inspiration1260x850.jpg" alt="The Inspiration">
                             </div>
                             <div class="collection-three-content u-absolute u-w3of8 | u-w8of8@tablet">
                                 <h1 class="title">The Crawford Inspiration</h1>
                                 <p>It is inspired by the coziness of home - to give every family member a place to sit back and relax. Its contemporary/transitional design shows off the Crawford's clean, modern lines. It's upholstered in a sophisticated dark gray chenille fabric made from high end fabrics and natural fibres. It's designed to give you the ultimate comfort - with added cushioniong for support in all the right spots plus a manual recliner. When you want to kick your feet up you can!</p>
                             </div>
                         </div>
+
+                        <section class="homepage-shop">
+                            <div class="inner-container">
+                                <header class="js-appear-object appear-bottom product-grid-header">
+                                    <h2>Shop the Crawford Reclining Collection</h2>
+                                    <a href="collections.html" class="product-grid-cta cta-link-secondary">Premium Quality</a>
+                                </header>
+                                <div class="product-grid js-load-more container">
+                                    <div class="product-grid-item js-appear-object appear-bottom " data-productid="2003903840325">
+                                        <a href="london.html" class="product-link">
+                                            <div class="product-picture">
+                                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Shop-The-Crawford-Three-Piece-Sofa-Set-Collection.jpg" alt="Crawford Luxury 3 Piece Sofa Collection">
+                                                <div class="product-more"></div>
+                                            </div>
+                                            <p class="product-name">The Crawford Reclining 3 Piece Sofa Set</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one" data-productid="2003910066245">
+                                        <a href="lorraine.html" class="product-link">
+                                            <div class="product-picture">
+                                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Shop-The-Crawford-Sofa-Collection.jpg" alt="Crawford Luxury Sofa">
+                                                <div class="product-more"></div>
+                                            </div>
+                                            <p class="product-name">The Crawford Reclining Sofa</p>                                           
+                                        </a>
+                                    </div>
+
+                                    <div class="product-grid-item js-appear-object appear-bottom " data-productid="1500977430597">
+                                        <a href="crawford.html" class="product-link">
+                                            <div class="product-picture">
+                                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Shop-The-Crawford-Loeseat-Collection.jpg" alt="Crawford Luxury Loveseat">
+                                                <div class="product-more"></div>
+                                            </div>
+                                            <p class="product-name">The Crawford Reclining Loveseat</p>                                          
+                                        </a>
+                                    </div>
+
+                                    <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one" data-productid="2003916226629">
+                                        <a href="mattresses.html" class="product-link">
+                                            <div class="product-picture">
+                                                <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Shop-The-Crawford-Chair-Collection.jpg" alt="Crawford Luxury Chair">
+                                                <div class="product-more"></div>
+                                            </div>
+                                            <p class="product-name">The Crawford Reclining Chair</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
                         <div class="collection-next wrapper--valign">
                             <a href="mattresses.html" class="collection-next-inner"></a>
@@ -428,47 +535,7 @@
         </div>
         <div class="loader-overlay u-absolute u-pos-tl u-fit"></div>
     </div>
-
-    <!--<div class="intro">
-        <div class="intro-left u-absolute u-pos-tl">
-            <div class="intro-left-inner u-absolute u-pos-tl u-fit">
-                <div class="intro-left-content u-absolute u-pos-tl u-fit">
-                    <div class="intro-logo">
-                        <!--<div class="intro-logo-line-one">
-                            <svg class="intro-logo-line-one-content" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 29" style="enable-background:new 0 0 100 29;" xml:space="preserve" width="100" height="29">
-                            <text x="10" y="15" style="fill:black;font-weight:bold;">WELCOME</text></svg>
-                        </div>-->
-                        <!--<div class="intro-logo-line-two">
-                            <svg class="intro-logo-line-two-content" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 180 10" style="enable-background:new 0 0 180 10;" xml:space="preserve" width="180" height="10">
-                            <text x="10" y="15" style="fill:black;font-weight:bold;text-align:center;">AMERICAN HOME LINE</text></svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!--<div class="intro-right u-absolute u-pos-tr">
-            <div class="intro-right-inner u-absolute u-pos-tl u-fit">
-                <div class="intro-right-content u-absolute u-pos-tl u-fit">
-                    <div class="intro-logo">
-                        <div class="intro-logo-line-one" style="font-weight:200;">
-                            <svg class="intro-logo-line-one-content" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 29" style="enable-background:new 0 0 100 29;" xml:space="preserve" width="100" height="29">
-                            <text x="10" y="15" style="fill:black;font-weight:bold;">WELCOME</text></svg>
-                        </div>
-                        <div class="intro-logo-line-two">
-                            <svg class="intro-logo-line-two-content" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 180 10" style="enable-background:new 0 0 180 10;" xml:space="preserve" width="180" height="10">
-                            <text x="10" y="15" style="fill:black;font-weight:bold;text-align:center;">AMERICAN HOME LINE</text></svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="intro-small-line" style="margin-left:-15px;"></div>
-        <div class="intro-line" style="margin-left:-15px;"></div>
-    </div>-->
-    
-
-    <script src="js/main.js?v=1.4.8" type="text/javascript"></script>
-
-
+  
+   <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
