@@ -29,6 +29,21 @@
         ga('send', 'pageview');
       </script>-->  
    <style>
+       @media(min-width:767px) {
+           button.menu-main-open {
+               visibility: hidden;
+           }
+
+           .product-grid .product-name {
+               overflow: visible;
+               font-size: 16px;
+               max-width: 249px;
+               word-wrap: break-word;
+               text-align: center !important;
+               vertical-align: middle !important;
+           }
+       }
+
        .tk-canada-type-gibson {
            font-family: "canada-type-gibson",sans-serif;
        }
@@ -59,6 +74,26 @@
            font-weight: 600;
            font-style: normal;
        }
+       @font-face {
+           font-family: butlerregular;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_regular-webfont.woff2) format("woff2");
+       }
+
+       @font-face {
+           font-family: butlermedium;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_medium-webfont.woff2) format("woff2"),url(fonts/butler_medium-webfont.woff) format("woff");
+       }
+
+       @font-face {
+           font-family: butlerlight;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_light-webfont.woff2) format("woff2"),url(fonts/butler_light-webfont.woff) format("woff");
+       }
        .product-grid {
            justify-content:center;
        }
@@ -71,6 +106,12 @@
            .product-picture {
                width: 260px;
                height: 260px;
+           }
+       }
+
+       @media(min-width:767px) {
+           button.menu-main-open {
+               visibility: hidden;
            }
        }
 
@@ -168,7 +209,6 @@
                                 </span>
                             </div>
                             <ul class="menu-list menu-main-secondary">
-                                <li class="menu-item"><a href="collections.html">Collections</a></li>
                                 <li class="menu-item"><a href="contact.html">Contact</a></li>
                                 <li class="menu-item"><a href="terms-and-conditions.html">Terms and conditions</a></li>
                                 <li class="menu-item"><a href="privacy-policy.html">Privacy</a></li>
@@ -192,7 +232,7 @@
 
             <main class="site-container" id="site-container" role="main" data-view="collection">
                 <div class="container typeset">
-                    <div class="collection-hero u-relative wrapper--valign" theme="light">
+                    <div class="collection-hero u-relative wrapper--valign" theme="dark">
                         <div class="collection-hero-bg u-absolute u-pos-tl u-fit u-overflow-h">
                             <div data-scale="1" data-ratio="-0.2" class="js-parallax-object u-absolute u-pos-tl u-fit" style="transform: translateY(0px) scale(1) translateZ(0px);">
                                 <picture class="js-object-fit u-absolute u-pos-tl u-fit u-overflow-h" data-width="1440" data-height="900">
@@ -436,7 +476,7 @@
                                 </header>
                                 <div class="product-grid js-load-more container">
                                     <div class="product-grid-item js-appear-object appear-bottom" width="33%">
-                                        <a href="productpage.html" class="product-link">
+                                        <a href="Product page final.html" class="product-link">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Supreme-Latex-Hybrid-Mattress_Final_260x260.jpg" alt="London Luxury 3 Piece Sofa Collection">
                                                 <div class="product-more"></div>
@@ -446,7 +486,7 @@
                                     </div>
 
                                     <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one">
-                                        <a href="productpage.html" class="product-link" width="33%">
+                                        <a href="Product page final.html" class="product-link" width="33%">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Supreme-Latex-Hybrid-Mattress_Final_260x260.jpg" alt="London Luxury Sofa">
                                                 <div class="product-more"></div>
@@ -456,7 +496,7 @@
                                     </div>
 
                                     <div class="product-grid-item js-appear-object appear-bottom">
-                                        <a href="ProductPage_2.html" class="product-link" width="33%">
+                                        <a href="Product page final.html" class="product-link" width="33%">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Comfort-Gel_Final_260x260.jpg" alt="London Luxury Loveseat">
                                                 <div class="product-more"></div>
@@ -493,9 +533,9 @@
                                     </div>
                                 </div>
                                 <picture class="collection-next-img u-w4of8 u-offset-l-w1of8 u-inline-block u-va-middle | u-w3of8@tablet | u-w8of8@mobile u-offset-l-0@mobile">
-                                    <source srcset="img/London_Bottom-Banner_1280x480.jpg" media="(min-width: 740px)">
-                                    <source srcset="img/London_Bottom-Banner_1280x480.jpg" media="(max-width: 740px)">
-                                    <img src="img/London_Bottom-Banner_1280x480.jpg" class="u-absolute u-pos-tl u-fit u-object-fit-cover u-force-3d" alt="London Lifestyle 1280x480 Banner for London Page">
+                                    <source srcset="img/London_Bottom-Banner_1280x480.png" media="(min-width: 740px)">
+                                    <source srcset="img/London_Bottom-Banner_1280x480.png" media="(max-width: 740px)">
+                                    <img src="img/London_Bottom-Banner_1280x480.png" class="u-absolute u-pos-tl u-fit u-object-fit-cover u-force-3d" alt="London Lifestyle Banner">
                                 </picture>
                             </a>
                         </div>
@@ -519,10 +559,9 @@
                         </nav>
                         <nav class="menu menu-bottom" role="navigation">
                             <ul class="menu-list">
-                                <li class="menu-item"><a href="collections.html">Collections</a></li>
                                 <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                <li class="menu-item"><a data-router-navigate="" href="terms-and-conditions.html">Terms and conditions</a></li>
-                                <li class="menu-item"><a data-router-navigate="" href="privacy-policy.html">Privacy</a></li>
+                                <li class="menu-item"><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                                <li class="menu-item"><a href="privacy-policy.html">Privacy</a></li>
                             </ul>
                         </nav>
                     </div>
