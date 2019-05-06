@@ -59,6 +59,26 @@
            font-weight: 600;
            font-style: normal;
        }
+       @font-face {
+           font-family: butlerregular;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_regular-webfont.woff2) format("woff2");
+       }
+
+       @font-face {
+           font-family: butlermedium;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_medium-webfont.woff2) format("woff2");
+       }
+
+       @font-face {
+           font-family: butlerlight;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_light-webfont.woff2) format("woff2");
+       }
        
        .product-grid .product-name 
        {
@@ -80,8 +100,21 @@
                padding-top: 40px!important;
                padding-bottom: 0px!important;
            }
-
+         
                     
+       }
+       @media(min-width:767px) {
+           button.menu-main-open {
+               visibility: hidden;
+           }
+           .product-grid .product-name {
+               overflow: visible;
+               font-size: 16px;
+               max-width: 249px;
+               word-wrap: break-word;
+               text-align: center !important;
+               vertical-align: middle !important;
+           }
        }
 
        @media(max-width:1024px) {
@@ -148,6 +181,7 @@
                     <h2 class="u-visually-hidden">Top Menu</h2>
                     <ul class="menu-list">
                         <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="about.html">About</a></li>
                         <li class="menu-item"><a href="collections.html">Collections</a></li>
                     </ul>
                     <button type="button" class="menu-main-open" data-menu-main-toggle>
@@ -406,7 +440,7 @@
                                 </header>
                                 <div class="product-grid js-load-more container">
                                     <div class="product-grid-item js-appear-object appear-bottom " data-productid="2003903840325">
-                                        <a href="london.html" class="product-link">
+                                        <a href="The Crawford Reclining 3 Piece Sofa Set.html" class="product-link">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Shop-The-Crawford-Three-Piece-Sofa-Set-Collection.jpg" alt="Crawford Luxury 3 Piece Sofa Collection">
                                                 <div class="product-more"></div>
@@ -416,7 +450,7 @@
                                     </div>
 
                                     <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one" data-productid="2003910066245">
-                                        <a href="lorraine.html" class="product-link">
+                                        <a href="The Crawford Reclining Sofa.html" class="product-link">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Shop-The-Crawford-Sofa-Collection.jpg" alt="Crawford Luxury Sofa">
                                                 <div class="product-more"></div>
@@ -426,7 +460,7 @@
                                     </div>
 
                                     <div class="product-grid-item js-appear-object appear-bottom " data-productid="1500977430597">
-                                        <a href="crawford.html" class="product-link">
+                                        <a href="The Crawford Reclining Loveseat.html" class="product-link">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Shop-The-Crawford-Loeseat-Collection.jpg" alt="Crawford Luxury Loveseat">
                                                 <div class="product-more"></div>
@@ -436,7 +470,7 @@
                                     </div>
 
                                     <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one" data-productid="2003916226629">
-                                        <a href="mattresses.html" class="product-link">
+                                        <a href="The Crawford Reclining Chair.html" class="product-link">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Shop-The-Crawford-Chair-Collection.jpg" alt="Crawford Luxury Chair">
                                                 <div class="product-more"></div>
@@ -453,7 +487,7 @@
                                 <div class="collection-next-content u-w2of8 u-offset-l-w1of8 u-inline-block u-va-middle | u-w3of8@tablet | u-w8of8@mobile u-offset-l-0@mobile">
                                     <span class="subtitle subtitle--line subtitle--gap">Next Collection</span>
                                     <h1 class="title title--big">
-                                        London Luxory Chenille
+                                        The Luxury Mattress Collection
                                     </h1>
                                     <div class="collection-next-link cta-link cta-link--icon">
                                         <span class="icon-arrow" width="6" height="8">
@@ -490,8 +524,8 @@
                             <ul class="menu-list">
                                 <li class="menu-item"><a href="collections.html">Collections</a></li>
                                 <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                <li class="menu-item"><a data-router-navigate="" href="terms-and-conditions.html">Terms and conditions</a></li>
-                                <li class="menu-item"><a data-router-navigate="" href="privacy-policy.html">Privacy</a></li>
+                                <li class="menu-item"><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                                <li class="menu-item"><a href="privacy-policy.html">Privacy</a></li>
                             </ul>
                         </nav>
                     </div>
