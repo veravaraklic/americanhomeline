@@ -59,6 +59,26 @@
            font-weight: 600;
            font-style: normal;
        }
+       @font-face {
+           font-family: butlerregular;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_regular-webfont.woff2) format("woff2");
+       }
+
+       @font-face {
+           font-family: butlermedium;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_medium-webfont.woff2) format("woff2");
+       }
+
+       @font-face {
+           font-family: butlerlight;
+           font-style: normal;
+           font-weight: 400;
+           src: url(fonts/butler_light-webfont.woff2) format("woff2");
+       }
        .product-grid .product-name 
        {
            overflow: visible;
@@ -86,6 +106,20 @@
                height: 160px;
            }
           
+       }
+       @media(min-width:767px) {
+           button.menu-main-open {
+               visibility: hidden;
+           }
+
+           .product-grid .product-name {
+               overflow: visible;
+               font-size: 16px;
+               max-width: 249px;
+               word-wrap: break-word;
+               text-align: center !important;
+               vertical-align: middle !important;
+           }
        }
        @media(max-width:767px) {
            .site-footer-copyright img {
@@ -413,7 +447,7 @@
                                 </header>
                                 <div class="product-grid js-load-more container">
                                     <div class="product-grid-item js-appear-object appear-bottom ">
-                                        <a href="london.html" class="product-link">
+                                        <a href="Lorraine Bel-Aire Deluxe 3 Piece Ebony Reclining Sofa Set.html" class="product-link">-->
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Lorraine-Ebony-Three-Piece-Reclining-Collection.jpg" alt="London Luxury 3 Piece Sofa Collection">
                                                 <div class="product-more"></div>
@@ -423,7 +457,7 @@
                                     </div>
 
                                     <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one">
-                                        <a href="lorraine.html" class="product-link">
+                                        <a href="Lorraine Bel-Aire Deluxe Ebony Reclining Sofa.html" class="product-link">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Lorraine-Ebony-Reclining-Sofa.jpg" alt="London Luxury Sofa">
                                                 <div class="product-more"></div>
@@ -433,7 +467,7 @@
                                     </div>
 
                                     <div class="product-grid-item js-appear-object appear-bottom-delay-one">
-                                        <a href="crawford.html" class="product-link">
+                                        <a href="Lorraine Bel-Aire Ebony Reclining Loveseat.html" class="product-link">-->
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Lorraine-Ebony-Reclining-Loveseat.jpg" alt="London Luxury Loveseat">
                                                 <div class="product-more"></div>
@@ -443,7 +477,7 @@
                                     </div>
 
                                     <div class="product-grid-item js-appear-object appear-bottom appear-bottom-delay-one">
-                                        <a href="mattresses.html" class="product-link">
+                                        <a href="Lorraine Bel-Aire Ebony Reclining Chair.html" class="product-link">
                                             <div class="product-picture">
                                                 <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="img/Lorraine-Ebony-Reclining-Chair.jpg" alt="London Luxury Chair">
                                                 <div class="product-more"></div>
@@ -498,8 +532,8 @@
                             <ul class="menu-list">
                                 <li class="menu-item"><a href="collections.html">Collections</a></li>
                                 <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                <li class="menu-item"><a data-router-navigate="" href="terms-and-conditions.html">Terms and conditions</a></li>
-                                <li class="menu-item"><a data-router-navigate="" href="privacy-policy.html">Privacy</a></li>
+                                <li class="menu-item"><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                                <li class="menu-item"><a href="privacy-policy.html">Privacy</a></li>
                             </ul>
                         </nav>
                     </div>
