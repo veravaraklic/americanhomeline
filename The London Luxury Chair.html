@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/main.css?v=70285e6eb34ad901164d393e3e35de24" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
-        .myfooter {
+         .myfooter {
             color: hsla(0,0%,100%,.54);
             background-color: #000;
             padding: 70px 70px;
@@ -118,7 +118,7 @@
             }
 
         }
-
+     
     </style>
 </head>
 
@@ -148,7 +148,7 @@
 
             <!-- DEVELOPER NOTE: THE HAMBURGER navbar__item--logo IS DUPLICATED - CHANGES HERE NEED TO BE REFELCTED IN MYACCOUNT/NAVBAR.HTML -->
             <div class="navbar__item  navbar__item--logo">
-                <a id="header-navbar-logo" href="index.html"><img src="img\AHL-Black-Font.png" /></a>
+                <a id="header-navbar-logo" href="index.html"><img class="navLogo" src="img\AHL-Black-Font.png" /></a>
             </div>
 
             <ul id="primary-nav-container" class="navbar__item--links primary-nav js-primary-nav">
@@ -208,58 +208,60 @@
 
                 <section class="lang-en">
                     <div class="container">
-                        <div class="cly-product js-product-pdp js-product-container" data-nose-bridge="16" data-nosepad="false" data-lens-height="39" data-lens-width="54" data-arm-length="138">
-                            <div class="cly-carousel carousel-pdp-eyeglasses-container product-image">
-                                <div id="carousel-pdp-eyeglasses" class="pdp-carousel carousel slide" data-ride="carousel" data-interval="false">
-
-                                    <div class="carousel-inner" role="listbox">
-
-                                        <div class="item active">
-                                            <div class="carousel-image-container ">
-                                                <div class="carousel-image">
-                                                    <img class="img-responsive center-block" src="img/Shop London Images on Bottom of London Page\London Product Pages\London_940x423\London-Luxury-Chenille-Chair_940x423.png" sizes="(min-width: 720px) 90vw, 100vw" />
+                            <div class="cly-product js-product-pdp js-product-container" data-nose-bridge="16" data-nosepad="false" data-lens-height="39" data-lens-width="54" data-arm-length="138">
+                                    <div class="cly-carousel carousel-pdp-eyeglasses-container product-image">
+                                        <div id="carousel-pdp-eyeglasses" class="pdp-carousel carousel slide" data-ride="carousel" data-interval="false">
+        
+                                            <div class="carousel-inner" role="listbox">
+        
+                                                <div class="item active">
+                                                    <div class="carousel-image-container ">
+                                                        <div class="carousel-image">
+                                                            <img class="img-responsive center-block" 
+                                                            src="img/Shop London Images on Bottom of London Page\London Product Pages\London_940x423\London-Luxury-Chenille-Chair_940x423.png" 
+                                                            sizes="(min-width: 720px) 90vw, 100vw" />
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item ">
-                                            <div class="carousel-image-container">
-                                                <div class="carousel-image">
-                                                    <img class="img-responsive center-block"
-                                                         src="img/Shop London Images on Bottom of London Page\London Product Pages\London_940x423\London-Luxury-Chenille-Chair_Side_940x423.png"
-                                                         sizes="(min-width: 720px) 90vw, 100vw" />
+        
+                                                <div class="item ">
+                                                    <div class="carousel-image-container">
+                                                        <div class="carousel-image">
+                                                            <img class="img-responsive center-block"
+                                                                 src="img/Shop London Images on Bottom of London Page\London Product Pages\London_940x423\London-Luxury-Chenille-Chair_Side_940x423.png"
+                                                                 sizes="(min-width: 720px) 90vw, 100vw" />
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item ">
-                                            <div class="carousel-image-container ">
-                                                <div class="carousel-image">
-                                                    <img class="img-responsive center-block"
-                                                         src="img/Shop London Images on Bottom of London Page\London Product Pages\London_940x423\London-Luxury-Chenille-Chair_Side1_940x423.png"
-                                                         sizes="(min-width: 720px) 90vw, 100vw" />
+        
+                                                <div class="item ">
+                                                    <div class="carousel-image-container ">
+                                                        <div class="carousel-image">
+                                                            <img class="img-responsive center-block"
+                                                                 src="img/Shop London Images on Bottom of London Page\London Product Pages\London_940x423\London-Luxury-Chenille-Chair_Side_940x423.png"
+                                                                 sizes="(min-width: 720px) 90vw, 100vw" />
+                                                        </div>
+                                                    </div>
                                                 </div>
+
                                             </div>
+                                            <!-- Controls -->
+                                            <a id="pdp-carousel-previous" class="left carousel-control pdp-carousel__control" href="#carousel-pdp-eyeglasses" role="button" data-slide="prev">
+                                                <img class="glyphicon pdp-carousel__control--arrow arrowLeft" aria-hidden="true" src="img/baseline-arrow_back_ios-24px.svg" style="width:30%;" />
+                                                <span class="sr-only">
+                                                    Previous
+                                                </span>
+                                            </a>
+                                            <a id="pdp-carousel-next" class="right carousel-control pdp-carousel__control" href="#carousel-pdp-eyeglasses" role="button" data-slide="next">
+                                                <img class="glyphicon pdp-carousel__control--arrow" aria-hidden="true" src="img/baseline-arrow_forward_ios-24px.svg" style="width:30%">
+                                                <span class="sr-only">
+                                                    Next
+                                                </span>
+                                            </a>
                                         </div>
-
-
-
+        
                                     </div>
-                                    <!-- Controls -->
-                                    <a id="pdp-carousel-previous" class="left carousel-control pdp-carousel__control" href="#carousel-pdp-eyeglasses" role="button" data-slide="prev">
-                                        <img class="glyphicon pdp-carousel__control--arrow arrowLeft" aria-hidden="true" src="img/baseline-arrow_back_ios-24px.svg" style="width:30%;" />
-                                        <span class="sr-only">
-                                            Previous
-                                        </span>
-                                    </a>
-                                    <a id="pdp-carousel-next" class="right carousel-control pdp-carousel__control" href="#carousel-pdp-eyeglasses" role="button" data-slide="next">
-                                        <img class="glyphicon pdp-carousel__control--arrow" aria-hidden="true" src="img/baseline-arrow_forward_ios-24px.svg" style="width:30%">
-                                        <span class="sr-only">
-                                            Next
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
+
                             <div id="js-buybar-wrapper" class="cly-buybar-wrapper">
                                 <div id="js-buybar" class="cly-buybar">
                                     <div class="container-flex">
@@ -312,7 +314,7 @@
                                             LonC6115
                                         </h1>
                                     </div>
-                                    <div class="cly-pdp-details__brand">Crawford</div>
+                                    <div class="cly-pdp-details__brand">London</div>
                                     <div class="cly-pdp-details__model"></div>
                                     <div class="cly-pdp-details__rating js-pr-rating"><div id="pr-rating"></div></div>
                                     <div class="cly-pdp-details__tags">
@@ -510,3 +512,4 @@
 </body>
 
 </html>
+
